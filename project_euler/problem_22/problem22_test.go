@@ -21,3 +21,9 @@ func TestProblem22_Func(t *testing.T) {
 		})
 	}
 }
+
+func BenchmarkProblem22_Func(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Problem22("\"COLIN\",\"COLIN\"")
+	}
+}
