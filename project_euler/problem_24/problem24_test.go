@@ -19,13 +19,13 @@ func TestProblem24_Func(t *testing.T) {
 		t.Run(test.name, func(t *testing.T) {
 			got := Problem24(test.input)
 			if got != test.output {
-				t.Errorf("Problem23() = got %v, want %v", got, test.output)
+				t.Errorf("Problem24() = got %v, want %v", got, test.output)
 			}
 		})
 	}
 }
 
-func BenchmarkProblem23_Func(b *testing.B) {
+func BenchmarkProblem24_Func(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		Problem24(1000000)
 	}
